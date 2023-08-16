@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding DApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crowdfunding</h1>
+        <p>Goal: <span id="goal"></span> ETH</p>
+        <p>Raised: <span id="raised"></span> ETH</p>
+        <div class="contribute-section">
+            <input type="number" id="contributionAmount" placeholder="Contribution in ETH" step="0.01" class="contribution-input">
+            <button id="contributeBtn" class="btn btn-primary">Contribute</button>
+        </div>
+        <button id="connectMetaMask" class="btn btn-secondary">Connect with MetaMask</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
